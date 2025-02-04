@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Shaziya Khanam" />
+    <meta
+      name="description"
+      content="A Weather WebApp that provides real-time weather updates for any city using OpenWeather API. Built with HTML, CSS, and JavaScript."
+    />
+    <meta
+      name="keywords"
+      content="Weather, Weather App, Weather Forecast, Temperature, OpenWeather API, JavaScript, Frontend Development, Real-time Weather"
+    />
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6c19d36ec3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Web App</h1>
+      <div class="search-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" id="cityInput" placeholder="Enter City" />
+        <button id="searchBtn">Get Weather</button>
+      </div>
+      <div class="weather-info" id="weatherInfo">
+        <h2 id="cityName"></h2>
+        <p id="temperature"></p>
+        <p id="humidity"></p>
+        <p id="condition"></p>
+        <img id="weatherIcon" src="" alt="Weather Icon" />
+      </div>
+      <div id="loading">
+        <i class="fa-solid fa-sun loading-icon"></i>
+      </div>
+      <p id="errorMsg" class="error"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
